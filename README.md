@@ -1,2 +1,2 @@
 # DotNetCoreKampi
- DotNetCore Project Camp Jobs
+Eğitime ulaşmak için **[tıklayın](https://www.youtube.com/playlist?list=PLKnjBHu2xXNNkinaVhPqPZG0ubaLN63ci)**
