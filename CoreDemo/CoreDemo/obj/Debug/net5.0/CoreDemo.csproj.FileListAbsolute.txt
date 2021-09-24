@@ -157,3 +157,6 @@ C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debu
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\_Partial1.cshtml.g.cs
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\_Partial2.cshtml.g.cs
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\_Partial3.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Blog\BlogReadAll.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Comment\CommentListByBlog.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Comment\PartialAddComment.cshtml.g.cs

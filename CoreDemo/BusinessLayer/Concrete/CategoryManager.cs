@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
 
         public List<Category> GetList()
         {
-            return _categoryDal.GetList();
+            return _categoryDal.GetListAll();
         }
 
         public void UpdateCategory(Category category)
