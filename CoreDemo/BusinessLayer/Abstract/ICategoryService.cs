@@ -10,6 +10,7 @@ namespace BusinessLayer.Abstract
         void UpdateCategory(Category category);
         List<Category> GetList();
         Category GetById(int id);
+        List<Category> GetListWithBlog();
 
     }
 }

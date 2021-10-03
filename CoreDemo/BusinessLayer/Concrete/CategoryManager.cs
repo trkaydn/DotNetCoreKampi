@@ -39,5 +39,10 @@ namespace BusinessLayer.Concrete
         {
             _categoryDal.Update(category);
         }
+
+        public List<Category> GetListWithBlog()
+        {
+            return _categoryDal.GetListWithBlog();
+        }
     }
 }
