@@ -1,0 +1,40 @@
+﻿<div class="tech-btm">
+    <h4>Mail Bültenine Abone Olun</h4>
+    <p>Teknoloji, yazılım ve diğer bloglar... </p>
+    <form action="javascript:void(0)">
+        <input type="text" style="
+               width: 100%;
+               color: #737070;
+               outline: none;
+               font-size: 14px;
+               padding: 0.6em 1em;
+               border: 2px solid #eceff1;
+               -webkit-appearance: none;
+               letter-spacing: 1px;
+               margin: 1em 0;
+               " placeholder="E-Posta" id="mail">
+        <p id="information" style="color:darkred"></p>
+        <input type="submit" value="Abone Ol" id="submit" onclick="FormPost()">
+    </form>
+</div>
+<script>
+    function FormPost() {
+        var mail = $("#mail").val();
+        $.ajax({
+            type: 'POST',
+            url: '/NewsLetter/SubscribeMail/',
+            data: { "mail": mail },
+            dataType: 'Json',
+            success: function (control) {
+                if (control === 1) {
+                    $("#submit").prop("disabled", true);
+                    $("#mail").remove();
+                    $("#submit").val("Başarıyla abone olundu!");
+                    $("#information").remove();
+                } else {
+                    $("#information").text("Lütfen geçerli bir E-Posta girin.");
+                }
+            }
+        });
+    }
+</script>

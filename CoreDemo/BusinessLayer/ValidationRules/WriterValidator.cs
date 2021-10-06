@@ -9,13 +9,13 @@ namespace BusinessLayer.ValidationRules
         public WriterValidator()
         {
             RuleFor(x => x.WriterName).NotEmpty().WithMessage("Yazar ismi zorunludur.");
-            RuleFor(x => x.WriterMail).NotEmpty().WithMessage("E-Posta zorunludur.").EmailAddress();
+            RuleFor(x => x.WriterMail).NotEmpty().WithMessage("E-Posta zorunludur.").EmailAddress().WithMessage("Lütfen geçerli bir E-Posta adresi girin.");
             RuleFor(x => x.WriterName).MinimumLength(2).WithMessage("İsim en az 2 karakter olmalıdır.");
             RuleFor(x => x.WriterName).MaximumLength(50).WithMessage("İsim en fazla 50 karakter olmalıdır.");
             RuleFor(x => x.WriterPasswordConfirm).NotEmpty().WithMessage("Şifre tekrarı boş geçilemez.");
 
             RuleFor(x => x.WriterPassword).NotEmpty().WithMessage("Şifre boş geçilemez.")
-                .Must(IsPasswordValid).WithMessage("regex error")
+                .Must(IsPasswordValid).WithMessage("Şifreniz en az bir büyük harf, bir küçük harf ve bir rakam içermelidir.")
                 .Equal(x => x.WriterPasswordConfirm).WithMessage("Girilen şifreler uyuşmuyor.");
 
         }

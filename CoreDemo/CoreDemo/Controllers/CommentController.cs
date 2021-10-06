@@ -1,5 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,9 +20,26 @@ namespace CoreDemo.Controllers
             return View();
         }
 
+        [HttpGet]
         public PartialViewResult PartialAddComment()
         {
             return PartialView();
+        }
+
+        [HttpPost]
+        public JsonResult PartialAddComment(Comment p)
+        {
+            CommentValidator validator = new CommentValidator();
+            p.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+
+            ValidationResult result = validator.Validate(p);
+            if (result.IsValid)
+            {
+                cm.AddComment(p);
+                return Json(1);
+            }
+           
+            return Json(0);
         }
 
         public PartialViewResult CommentListByBlog(int id)

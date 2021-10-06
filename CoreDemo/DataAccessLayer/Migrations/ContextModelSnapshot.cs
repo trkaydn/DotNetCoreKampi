@@ -126,11 +126,11 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("CommentDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("CommentMail")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("CommentStatus")
                         .HasColumnType("bit");
-
-                    b.Property<string>("CommentTitle")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CommentUserName")
                         .HasColumnType("nvarchar(max)");
@@ -170,6 +170,24 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("ContactID");
 
                     b.ToTable("Contacts");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.NewsLetter", b =>
+                {
+                    b.Property<int>("MailID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Mail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("MailStatus")
+                        .HasColumnType("bit");
+
+                    b.HasKey("MailID");
+
+                    b.ToTable("NewsLetters");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Writer", b =>
