@@ -1,0 +1,71 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h1>Yazarın Blogları</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Blog Başlığı</th>
+        <th>Oluşturma Tarihi</th>
+        <th>Kategori</th>
+        <th>Durum</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr id="@item.BlogID">
+            <td>@item.BlogID</td>
+            <td>@item.BlogTitle</td>
+            <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
+            <td>@item.Category.CategoryName</td>
+            <td>
+                @if (item.BlogStatus)
+                {
+                    <span class="badge badge-success">Aktif</span>
+                }
+                else
+                {
+                    <span class="badge badge-secondary">Pasif</span>
+                }
+
+            </td>
+            <td><button value="@item.BlogID" class="deleteBlog btn btn-danger">Sil</button></td>
+            <td><a href="/Blog/EditBlog/@item.BlogID" class="btn btn-warning">Düzenle</a></td>
+        </tr>
+
+    }
+</table>
+<a href="#" class="btn btn-primary">Yeni Blog Oluştur</a>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/writer/assets/js/sweetalert2.all.min.js"></script>
+<script>
+    $(".deleteBlog").on("click", async function () {
+        var blogID = $(this).val();
+        Swal.fire({
+            position: 'center',
+            icon: 'question',
+            title: 'Seçilen blog silinecek. <br/> Onaylıyor musunuz?',
+            confirmButtonText: 'Sil',
+            cancelButtonText: 'İptal',
+            showCancelButton: true,
+        }).then((result) => {
+
+            if (result.dismiss === Swal.DismissReason.cancel || result.dismiss == Swal.DismissReason.backdrop || result.dismiss == Swal.DismissReason.esc)
+                return;
+
+            $.ajax({
+                type: 'Get',
+                url: '/Blog/DeleteBlog/',
+                dataType: 'json',
+                data: { "id": blogID },
+            })
+            var element = document.getElementById(blogID);
+            element.remove();
+        })
+    });
+</script>
