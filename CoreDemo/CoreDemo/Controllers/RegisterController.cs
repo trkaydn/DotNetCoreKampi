@@ -32,7 +32,7 @@ namespace CoreDemo.Controllers
 
             if (results.IsValid)
             {
-                wm.AddWriter(p.Writer);
+                wm.TAdd(p.Writer);
                 return RedirectToAction("Index", "Blog");
             }
 
