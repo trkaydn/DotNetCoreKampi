@@ -194,3 +194,14 @@ C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debu
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterAboutOnDashboard\Default.cshtml.g.cs
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Writer\WriterEditProfile.cshtml.g.cs
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Writer\WriterAdd.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Notification\AllNotification.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Message\Inbox.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Message\MessageDetails.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Admin\AdminNavbarPartial.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\bin\Debug\net5.0\JetBrains.Annotations.dll
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\bin\Debug\net5.0\X.PagedList.dll
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\AddCategory.cshtml.g.cs

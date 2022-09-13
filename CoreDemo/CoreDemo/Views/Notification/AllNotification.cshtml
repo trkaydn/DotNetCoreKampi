@@ -1,0 +1,30 @@
+﻿@model List<EntityLayer.Concrete.Notification>
+@{
+    ViewData["Title"] = "AllNotification";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h1>Bildirimler</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Bildirim</th>
+        <th>Tarih</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.NotificationID</td>
+            <td>@item.NotificationDetails</td>
+
+            @if (item.NotificationDate.Date == DateTime.Today)
+            {
+                <td>@((DateTime.Now.TimeOfDay - item.NotificationDate.TimeOfDay).Hours) saat önce</td>
+            }
+            else
+            {
+                <td>@item.NotificationDate.ToString("dd.MM.yy HH:mm")</td>
+            }
+        </tr>
+    }
+</table>

@@ -9,8 +9,6 @@ namespace CoreDemo.Controllers
 	{
 		BlogManager bm = new BlogManager(new EfBlogRepository());
 		CategoryManager cm = new CategoryManager(new EfCategoryRepository());
-
-		[AllowAnonymous]
 		public IActionResult Index()
 		{
 			ViewBag.v1 = bm.GetList().Count;

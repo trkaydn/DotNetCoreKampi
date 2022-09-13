@@ -14,3 +14,4 @@ C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\BusinessLayer\obj
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete

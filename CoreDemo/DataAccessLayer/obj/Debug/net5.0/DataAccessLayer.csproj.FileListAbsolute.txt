@@ -15,3 +15,4 @@ C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\o
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
