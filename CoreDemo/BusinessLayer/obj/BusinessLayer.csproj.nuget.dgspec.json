@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Tarik Aydin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\tarik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tarik Aydin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tarik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -62,7 +62,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,21 +72,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Tarik Aydin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\tarik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tarik Aydin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tarik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -115,6 +116,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -142,7 +151,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -151,21 +161,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\Tarik Aydin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tarik Aydin\\Desktop\\Projects\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\obj\\",
+        "projectPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\tarik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tarik\\Documents\\GitHub\\DotNetCoreKampi\\CoreDemo\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tarik Aydin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tarik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,13 +200,24 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -205,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

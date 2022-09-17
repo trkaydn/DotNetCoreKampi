@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yazar Ajax İşlemleri</h1>
+<br />
+<button type="button" id="btngetlist" class="btn btn-outline-primary">Yazar Listesi</button>
+<br />
+<input type="text" id="id" name="id" />
+<button type="button" id="btngetbyid" class="btn btn-outline-success" placeholder="Yazar ID">Yazar Getir</button>
+<button type="button" id="btndelete" class="btn btn-outline-danger" placeholder="Yazar ID">Yazar Sil</button>
+<br />
+<input type="text" id="writerid" name="writerid" placeholder="Yazar ID" />
+<input type="text" id="writername" name="writername" placeholder="Yazar Adı" />
+<button type="button" id="btnaddwriter" class="btn btn-outline-success">Yazar Ekle</button>
+<button type="button" id="btnupwriter" class="btn btn-outline-warning">Yazar Güncelle</button>
+
+<br />
+<br />
+<div id="writerlist">
+    Buraya yazarlar gelecek
+</div>
+<br />
+<br />
+<div id="writerdetail">
+    Buraya bir yazar gelecek
+</div>
+<br />
+<br />
+
+
+@section scripts{
+
+    <script>
+        $('#btngetlist').click(function () {
+
+            $.ajax({
+                contentType: 'application/json',
+                dataType: 'json',
+                type: 'get',
+                url: '/Admin/Writer/WriterList',
+                success: function (values) {
+                    var data = jQuery.parseJSON(values);
+                    var tablehtml = "<table class='table table-bordered'><tr><th>Yazar ID</th><th>Yazar Adı</th></tr>";
+
+                    $.each(data, (index, value) => {
+                        tablehtml += `<tr><td>${value.Id}</td><td>${value.Name}</td></tr>`
+                    });
+                    tablehtml += "</table>";
+                    $('#writerlist').html(tablehtml);
+                }
+            });
+
+        });
+
+        $('#btngetbyid').click(function () {
+            var writerId = $('#id').val();
+            $.ajax({
+                contentType: 'application/json',
+                dataType: 'json',
+                data: { id: writerId },
+                type: 'get',
+                url: '/Admin/Writer/GetWriterById/',
+                success: function (values) {
+                    var data = jQuery.parseJSON(values);
+                    var tablehtml = `<table class='table table-bordered'><tr><th>Yazar ID</th><th>Yazar Adı</th></tr><tr><td>${data.Id}</td><td>${data.Name}</td></tr></table>`;
+                    $('#writerdetail').html(tablehtml);
+                }
+            });
+        });
+
+        $('#btnaddwriter').click(function () {
+            var writer = {
+                Name: $('#writername').val(),
+                Id: $('#writerid').val()
+            };
+            $.ajax({
+                type: 'post',
+                url: '/Admin/Writer/AddWriter/',
+                data: { p: writer },
+                success: function (values) {
+                    var data = jQuery.parseJSON(values);
+                    alert("Yazar ekleme başarıyla gerçekleşti");
+                    loaddata();
+                }
+            });
+        });
+
+        $('#btnupwriter').click(function () {
+            var writer = {
+                Name: $('#writername').val(),
+                Id: $('#writerid').val()
+            };
+            $.ajax({
+                type: 'post',
+                url: '/Admin/Writer/UpdateWriter/',
+                data: { p: writer },
+                success: function (values) {
+                    var data = jQuery.parseJSON(values);
+                    alert("Yazar güncelleme başarıyla gerçekleşti");
+                    loaddata();
+                }
+            });
+        });
+
+        $('#btndelete').click(function () {
+            var writerId = $('#id').val();
+            $.ajax({
+                contentType: 'application/json',
+                dataType: 'json',
+                data: { id: writerId },
+                type: 'get',
+                url: '/Admin/Writer/DeleteWriter/',
+                success: function (values) {
+                    alert("Yazar başarıyla silindi.");
+                    loaddata();
+                }
+            });
+        })
+
+        function loaddata(){
+            $('#btngetlist').click();
+        }
+    </script>
+}

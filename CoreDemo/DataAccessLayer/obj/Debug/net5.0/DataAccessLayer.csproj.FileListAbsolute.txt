@@ -16,3 +16,21 @@ C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\o
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.json
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\refint\DataAccessLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll

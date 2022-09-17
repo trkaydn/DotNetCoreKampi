@@ -10,3 +10,15 @@ C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Deb
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll
 C:\Users\Tarik Aydin\Desktop\Projects\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\bin\Debug\net5.0\CoreLayer.deps.json
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\bin\Debug\net5.0\CoreLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\bin\Debug\net5.0\CoreLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfo.cs
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\refint\CoreLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll

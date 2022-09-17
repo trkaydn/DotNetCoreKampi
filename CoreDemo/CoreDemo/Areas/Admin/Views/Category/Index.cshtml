@@ -22,7 +22,7 @@
         <tr>
             <td>@item.CategoryID</td>
             <td>@item.CategoryName</td>
-            <td><a href="#" class="btn btn-danger">Pasif Yap</a></td>
+            <td><button data-id="@item.CategoryID" class="btn btn-danger DeleteBtn">Pasif Yap</button></td>
             <td><a href="#" class="btn btn-warning">Aktif Yap</a></td>
             <td><a href="#" class="btn btn-primary">Düzenle</a></td>
         </tr>
@@ -33,3 +33,34 @@
 <br /><br />
 
 @Html.PagedListPager((IPagedList)Model, page=> Url.Action("Index",new { page }))
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/writer/assets/js/sweetalert2.all.min.js"></script>
+<script>
+    $(".DeleteBtn").on("click", function () {
+        var blogID = $(this).data('id');
+        Swal.fire({
+            position: 'center',
+            icon: 'question',
+            title: 'Seçilen kategori silinecek. <br/> Onaylıyor musunuz?',
+            confirmButtonText: 'Sil',
+            cancelButtonText: 'İptal',
+            showCancelButton: true,
+        }).then((result) => {
+
+            if (result.dismiss === Swal.DismissReason.cancel || result.dismiss == Swal.DismissReason.backdrop || result.dismiss == Swal.DismissReason.esc)
+                return;
+
+            $.ajax({
+                type: 'Get',
+                url: '/Admin/Category/CategoryDelete/' + blogID,
+                dataType: 'json',
+            })
+            setTimeout(function(){
+                window.location.reload();
+
+            },1000)
+
+        })
+    });
+</script>
