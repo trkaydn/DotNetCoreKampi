@@ -7,9 +7,10 @@ namespace BusinessLayer.Abstract
     {
         void AddComment(Comment comment);
         List<Comment> GetList(int id);
+		List<Comment> GetListWithBlog();
 
-        //void DeleteComment(Comment comment);
-        //void UpdateComment(Comment comment);
-        //Comment GetById(int id);
-    }
+		//void DeleteComment(Comment comment);
+		//void UpdateComment(Comment comment);
+		//Comment GetById(int id);
+	}
 }

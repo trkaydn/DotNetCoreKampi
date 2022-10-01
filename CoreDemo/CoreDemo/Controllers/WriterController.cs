@@ -5,11 +5,14 @@ using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
+using JetBrains.Annotations;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CoreDemo.Controllers
 {
@@ -17,12 +20,16 @@ namespace CoreDemo.Controllers
 	{
 		WriterManager wm = new WriterManager(new EfWriterRepository());
 
+		private readonly UserManager<AppUser> _userManager;
+
+		public WriterController(UserManager<AppUser> userManager)
+		{
+			_userManager = userManager;
+		}
+
 		public IActionResult Index()
 		{
-			var userMail = User.Identity.Name;
-			Context c = new Context();
-			var writerName = c.Writers.FirstOrDefault(x => x.WriterMail == userMail).WriterName;
-			ViewBag.v2 = writerName;
+			ViewBag.v2 = User.Identity.Name;
 			return View();
 		}
 		public IActionResult WriterProfile()
@@ -52,32 +59,41 @@ namespace CoreDemo.Controllers
 			return PartialView();
 		}
 
-		public IActionResult WriterEditProfile()
+		//public IActionResult WriterEditProfile()
+		//{
+		//	Context c = new Context();
+		//	var userName = User.Identity.Name;
+		//	var id = c.Users.FirstOrDefault(x => x.UserName == userName).Id;
+		//	UserManager userManager = new UserManager(new EfUserRepository());
+		//	var values = userManager.GetById(id);
+		//	return View(values);
+		//}
+
+		public async Task<IActionResult> WriterEditProfile()
 		{
-			var userMail = User.Identity.Name;
-			Context c = new Context();
-			var writerID = c.Writers.FirstOrDefault(x => x.WriterMail == userMail).WriterID;
-			var writervalues = wm.GetById(writerID);
-			return View(writervalues);
+			var values = await _userManager.FindByNameAsync(User.Identity.Name);
+			UserUpdateViewModel model = new UserUpdateViewModel
+			{
+				ImageUrl = values.ImageUrl,
+				NameSurname = values.NameSurname,
+				Mail = values.Email,
+				Password=null
+			};
+			return View(model);
 		}
 
 		[HttpPost]
-		public IActionResult WriterEditProfile(Writer p)
+		public async Task<IActionResult> WriterEditProfile(UserUpdateViewModel p)
 		{
-			WriterValidator validator = new WriterValidator();
-			ValidationResult result = validator.Validate(p);
 
-			if (result.IsValid)
-			{
-				wm.TUpdate(p);
-				return RedirectToAction("Index", "Dashboard");
-			}
-
-			foreach (var error in result.Errors)
-			{
-				ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
-			}
-			return View();
+			var values = await _userManager.FindByNameAsync(User.Identity.Name);
+			values.Email = p.Mail;
+			values.ImageUrl = p.ImageUrl;
+			values.NameSurname = p.NameSurname;
+			if (string.IsNullOrEmpty(p.Password))
+				values.PasswordHash  = _userManager.PasswordHasher.HashPassword(values, p.Password);
+			await _userManager.UpdateAsync(values);
+			return RedirectToAction("Index", "Dashboard");
 		}
 
 		[AllowAnonymous]
@@ -127,5 +143,6 @@ namespace CoreDemo.Controllers
 			wm.TAdd(w);
 			return RedirectToAction("Index", "Dashboard");
 		}
+
 	}
 }

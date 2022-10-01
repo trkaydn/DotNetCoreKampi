@@ -1,0 +1,12 @@
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\bin\Release\net5.0\EntityLayer.deps.json
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\bin\Release\net5.0\EntityLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\bin\Release\net5.0\EntityLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\refint\EntityLayer.dll
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\EntityLayer.pdb
+C:\Users\tarik\Documents\GitHub\DotNetCoreKampi\CoreDemo\EntityLayer\obj\Release\net5.0\ref\EntityLayer.dll

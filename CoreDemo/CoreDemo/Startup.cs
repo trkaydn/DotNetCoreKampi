@@ -1,3 +1,5 @@
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -37,7 +39,6 @@ namespace CoreDemo
 				config.Filters.Add(new AuthorizeFilter(policy));
 			});
 
-			services.AddMvc();
 
 			services.AddAuthentication(
 				CookieAuthenticationDefaults.AuthenticationScheme)
@@ -45,6 +46,27 @@ namespace CoreDemo
 				{
 					x.LoginPath = "/Login/Index";
 				});
+
+			services.ConfigureApplicationCookie(options =>
+			{
+
+				options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Login/AccessDenied");
+				options.SlidingExpiration = true;
+				options.LoginPath = "/Login/Index";
+				options.Cookie.HttpOnly = true;
+				options.ExpireTimeSpan = TimeSpan.FromMinutes(100);
+
+			});
+
+
+			services.AddDbContext<Context>();
+			services.AddIdentity<AppUser, AppRole>(x => 
+			{
+				x.Password.RequireUppercase = false;
+				x.Password.RequireNonAlphanumeric = false;
+			})
+				.AddEntityFrameworkStores<Context>();
+
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,12 +98,12 @@ namespace CoreDemo
 			{
 				endpoints.MapControllerRoute(
 					name: "areas",
-					pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+					pattern: "{area:exists}/{controller=Blog}/{action=Index}/{id?}"
 				);
 
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
+					pattern: "{controller=Blog}/{action=Index}/{id?}");
 			});
 		}
 	}

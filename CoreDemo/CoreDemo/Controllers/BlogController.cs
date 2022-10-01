@@ -17,12 +17,15 @@ namespace CoreDemo.Controllers
 	{
 		BlogManager bm = new BlogManager(new EfBlogRepository());
 		CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+
+		[AllowAnonymous]
 		public IActionResult Index()
 		{
 			var values = bm.GetBlogListWithCategory();
 			return View(values);
 		}
 
+		[AllowAnonymous]
 		public IActionResult BlogReadAll(int id)
 		{
 			ViewBag.id = id;
@@ -32,9 +35,10 @@ namespace CoreDemo.Controllers
 
 		public IActionResult BlogListByWriter()
 		{
-			var userMail = User.Identity.Name;
+			var userName = User.Identity.Name;
 			Context c = new Context();
-			var writerID = c.Writers.FirstOrDefault(x => x.WriterMail == userMail).WriterID;
+			var mail = c.Users.FirstOrDefault(x => x.UserName == userName).Email;
+			var writerID = c.Writers.FirstOrDefault(x => x.WriterMail == mail).WriterID;
 			var values = bm.GetListWithCategoryByWriterBM(writerID);
 			return View(values);
 		}
@@ -56,9 +60,10 @@ namespace CoreDemo.Controllers
 		{
 			BlogValidator validator = new BlogValidator();
 			ValidationResult result = validator.Validate(p);
-			var userMail = User.Identity.Name;
 			Context c = new Context();
-			var writerID = c.Writers.FirstOrDefault(x => x.WriterMail == userMail).WriterID;
+			var userName = User.Identity.Name;
+			var mail = c.Users.FirstOrDefault(x => x.UserName == userName).Email;
+			var writerID = c.Writers.FirstOrDefault(x => x.WriterMail == mail).WriterID;
 
 			if (result.IsValid)
 			{

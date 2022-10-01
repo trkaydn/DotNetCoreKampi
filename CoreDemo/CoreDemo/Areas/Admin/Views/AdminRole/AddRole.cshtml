@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "AddRole";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Rol Ekle</h1>
+
+<div class="form-group">
+    <form method="post">
+        <label>Rol Başlığı</label>
+        <input type="text" name="Name" class="form-control" />
+        <br>
+        <button class="btn btn-success" type="submit">Ekle</button>
+
+       <div asp-validation-summary="ModelOnly">
+           </div>
+    </form>
+</div>

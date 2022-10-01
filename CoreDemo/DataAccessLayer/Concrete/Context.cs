@@ -4,11 +4,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Concrete
 {
-	public class Context : IdentityDbContext<AppUser>
+	public class Context : IdentityDbContext<AppUser, AppRole, int>
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			optionsBuilder.UseSqlServer("server=TARIK-PC;database=CoreBlogDb;integrated security=true;");
+			//optionsBuilder.UseSqlServer("Data Source=SQL5108.site4now.net;Initial Catalog=db_a8da6f_coreblogdb;User Id=db_a8da6f_coreblogdb_admin;Password=tarik1846");
 		}
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

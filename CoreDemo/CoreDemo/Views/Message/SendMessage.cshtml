@@ -1,0 +1,29 @@
+﻿@model EntityLayer.Concrete.Message2
+
+@{
+    ViewData["Title"] = "SendMessage";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h1>Mesaj Gönder</h1>
+<br />
+
+@using (Html.BeginForm("SendMessage", "Message", FormMethod.Post))
+{
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            @Html.Label("Alıcı")
+            <input name="alicimail" type="email">
+        </div>
+        <div class="col-md-6 mb-3">
+            @Html.Label("Konu")
+            @Html.TextBoxFor(x => x.Subject, new { @class = "form-control", placeholder = "Konu" })
+        </div>
+        <div class="col">
+            @Html.Label("Mesaj")
+            @Html.TextAreaFor(x => x.MessageDetails,10,3 ,new { @class = "form-control", placeholder = "Mesaj" })
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary submit mb-4">Gönder</button>
+}
